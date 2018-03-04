@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.firebase.dailyexpenses.ReportsActivity"
+    android:orientation="vertical">
+
+ <android.support.v7.widget.Toolbar
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/colorPrimary"
+     >
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Reports"
+         android:textColor="#fff"/>
+ </android.support.v7.widget.Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="6dp"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="6dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Start Date"
+        android:id="@+id/start_date_edittext"
+        android:padding="6dp"
+        android:focusable="false"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="6dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="End Date"
+        android:id="@+id/end_date_edititext"
+        android:padding="6dp"
+        android:focusable="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="search"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:id="@+id/search_button"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:gravity="center_horizontal">
+
+</LinearLayout>
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:gravity="center"
+     android:id="@+id/no_results_found_layout"
+     android:visibility="gone">
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/animone"
+         android:layout_gravity="center"
+         android:layout_marginBottom="20dp"/>
+ </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:id="@+id/search_result_recycler_view">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+
+
+</LinearLayout>

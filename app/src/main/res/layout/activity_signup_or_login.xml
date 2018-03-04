@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center|center_vertical">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/moneytracker"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:text="Here you can add your Daily Expenses and Get Reports between dates."/>
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#ddd">
+
+    </View>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="24dp"
+    android:orientation="vertical"
+    android:layout_weight="4"
+    android:background="#f5f5f5">
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#fff"
+        android:text="Register"
+        android:background="#E57373"
+
+        >
+    </Button>
+
+            <Button
+                android:layout_marginTop="12dp"
+                android:id="@+id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#000"
+                android:text="Login"
+                android:layout_below="@+id/signup"
+                android:background="#fff"
+                >
+            </Button>
+</LinearLayout>
+</LinearLayout>

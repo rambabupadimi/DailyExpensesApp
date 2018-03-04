@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_amount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Amount"
+            android:textColor="#fff"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_margin="6dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_margin="6dp">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/edit_text_box"
+               android:hint="0"
+               android:id="@+id/amount_value"
+               android:padding="6dp"
+               android:inputType="number"/>
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/petrol_layout"
+                    android:background="@color/white"
+                    >
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/petrol"
+                        style="@style/toggleButton"
+                        android:layout_margin="8dp"
+                        android:id="@+id/petrol_button"
+                        android:backgroundTint="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Petroll"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/petrol_text"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/vegetables_layout"
+                    android:background="@color/white"
+                    >
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/vegetables"
+                        style="@style/toggleButton"
+                        android:layout_margin="8dp"
+                        android:id="@+id/vegetables_button"
+                        android:backgroundTint="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetables"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/vegetables_text"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/transport_layout"
+                    android:background="@color/white"
+                    >
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/transport"
+                        style="@style/toggleButton"
+                        android:layout_margin="8dp"
+                        android:id="@+id/transport_button"
+                        android:backgroundTint="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Transport"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/transport_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/pets_layout"
+                    android:background="@color/white"
+                    >
+                    <ToggleButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/pets"
+                        style="@style/toggleButton"
+                        android:layout_margin="8dp"
+                        android:id="@+id/pets_button"
+                        android:backgroundTint="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pets"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/pets_text"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_margin="4dp">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_margin="6dp"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:id="@+id/bills_layout"
+                      android:background="@color/white"
+                      >
+                      <ToggleButton
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/bill"
+                          style="@style/toggleButton"
+                          android:layout_margin="8dp"
+                          android:id="@+id/bills_button"
+                          android:backgroundTint="@color/colorPrimary"
+                          />
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Bills"
+                          android:gravity="center"
+                          android:paddingBottom="4dp"
+                          android:textColor="@color/colorPrimary"
+                          android:id="@+id/bills_text"/>
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_margin="6dp"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:id="@+id/clothes_layout"
+                      android:background="@color/white"
+                      >
+                      <ToggleButton
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/clothes"
+                          style="@style/toggleButton"
+                          android:layout_margin="8dp"
+                          android:id="@+id/clothes_button"
+                          android:backgroundTint="@color/colorPrimary"
+                          />
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Clothes"
+                          android:gravity="center"
+                          android:paddingBottom="4dp"
+                          android:textColor="@color/colorPrimary"
+                          android:id="@+id/clothes_text"/>
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_margin="6dp"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:id="@+id/dinner_layout"
+                      android:background="@color/white"
+                      >
+                      <ToggleButton
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/dinner"
+                          style="@style/toggleButton"
+                          android:layout_margin="8dp"
+                          android:id="@+id/dinner_button"
+                          android:backgroundTint="@color/colorPrimary"
+                          />
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Dinner"
+                          android:gravity="center"
+                          android:paddingBottom="4dp"
+                          android:textColor="@color/colorPrimary"
+                          android:id="@+id/dinner_text"/>
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_margin="6dp"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:id="@+id/party_layout"
+                      android:background="@color/white"
+                      >
+                      <ToggleButton
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/entertainment"
+                          style="@style/toggleButton"
+                          android:layout_margin="8dp"
+                          android:id="@+id/party_button"
+                          android:backgroundTint="@color/colorPrimary"
+                          />
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Party"
+                          android:gravity="center"
+                          android:paddingBottom="4dp"
+                          android:textColor="@color/colorPrimary"
+                          android:id="@+id/party_text"/>
+                  </LinearLayout>
+              </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/health_layout"
+            android:background="@color/white"
+            >
+            <ToggleButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/health"
+                style="@style/toggleButton"
+                android:layout_margin="8dp"
+                android:id="@+id/health_button"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/health_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/gifts_layout"
+            android:background="@color/white"
+            >
+            <ToggleButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/gift"
+                style="@style/toggleButton"
+                android:layout_margin="8dp"
+                android:id="@+id/gifts_button"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gifts"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/gifts_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/house_layout"
+            android:background="@color/white"
+            >
+            <ToggleButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/home"
+                style="@style/toggleButton"
+                android:layout_margin="8dp"
+                android:id="@+id/house_button"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="House"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/house_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/hotel_layout"
+            android:background="@color/white"
+            >
+            <ToggleButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/hotel"
+                style="@style/toggleButton"
+                android:layout_margin="8dp"
+                android:id="@+id/hotel_button"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/hotel_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#ddd"
+/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_weight="1.4"
+            android:gravity="center"
+/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#ddd"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_box"
+            android:hint="Others"
+            android:id="@+id/description_value"
+            android:padding="6dp"
+            android:inputType="text"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+          </ScrollView>
+        </LinearLayout>
+
+
+
+
+
+
+        <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+
+
+
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+         android:layout_marginLeft="12dp"
+         android:layout_marginRight="12dp"
+    >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAVE"
+            android:id="@+id/add"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_margin="1dp"
+            android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+
+
+
+ </RelativeLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1032667112386",
+    "firebase_url": "https://walletnote-2620a.firebaseio.com",
+    "project_id": "walletnote-2620a",
+    "storage_bucket": "walletnote-2620a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032667112386:android:3ba40d4640c3df4a",
+        "android_client_info": {
+          "package_name": "com.firebase.dailyexpenses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032667112386-9s69u163stk0k3cagi12aoel2o0kjm1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebase.dailyexpenses",
+            "certificate_hash": "70065fe351c8eb2da7f922382181d18a43f0642c"
+          }
+        },
+        {
+          "client_id": "1032667112386-3hpndp5jgp333p9esbmu7381616sgoje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4pFsZ3xNs_UNQWn_q0d1xw0nLs6htGWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032667112386-3hpndp5jgp333p9esbmu7381616sgoje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
